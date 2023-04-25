@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(253, 110, 110, 1) 0%, rgba(198, 29, 253, 1) 50%, rgba(127, 69, 252, 1) 100%);
+    font-size: 16px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    color: #fafafa;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    max-width: 650px;
+    padding: 50px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.container {
+    flex: 1;
+    color: #fafafa;
+    background-color: #00000024;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid lightgrey;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    cursor: pointer;
+    color: #fafafa;
+    top: 24%;
+    right: 4%;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.container input[type="submit"] {
+    font-family: 'Poppins', sans-serif;
+    background-color: #22222285;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #0000007a;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    color: #fafafa;
+}
+
+input::placeholder {
+    color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container a {
+    color: #fafafa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-buttons a:hover {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button-google {
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    color: #ffffff;
+}
+
+.button-facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
